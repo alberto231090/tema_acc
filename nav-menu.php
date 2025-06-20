@@ -12,7 +12,8 @@
     wp_nav_menu(array(
       'theme_location' => 'primary',
       'menu_class' => 'nav-links',
-      'container_class' => false
+      'menu_id' => 'menu-mobile',
+      'container' => false
     ));
     ?>
   </div>
