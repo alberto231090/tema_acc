@@ -35,12 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
     menu.classList.remove('active');
     toggle.classList.remove('active');
     toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Apri menu');
   }
 
   toggle.addEventListener('click', function () {
     const isOpen = menu.classList.toggle('active');
     toggle.classList.toggle('active', isOpen);
     toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    toggle.setAttribute('aria-label', isOpen ? 'Chiudi menu' : 'Apri menu');
   });
 
   document.addEventListener('click', function (e) {
