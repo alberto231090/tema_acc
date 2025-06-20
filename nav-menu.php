@@ -29,10 +29,28 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
+  function closeMenu() {
+    menu.classList.remove('active');
+    toggle.classList.remove('active');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+
   toggle.addEventListener('click', function () {
-    menu.classList.toggle('active');
-    toggle.classList.toggle('active');
-    toggle.setAttribute('aria-expanded', menu.classList.contains('active') ? 'true' : 'false');
+    const isOpen = menu.classList.toggle('active');
+    toggle.classList.toggle('active', isOpen);
+    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!menu.classList.contains('active')) return;
+    if (menu.contains(e.target) || toggle.contains(e.target)) return;
+    closeMenu();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && menu.classList.contains('active')) {
+      closeMenu();
+    }
   });
 });
 </script>
