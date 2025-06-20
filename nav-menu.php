@@ -1,4 +1,3 @@
-
 <nav class="navbar">
   <div class="container">
     <a href="<?php echo home_url(); ?>" class="logo">Alberto</a>
