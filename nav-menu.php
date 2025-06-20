@@ -12,7 +12,7 @@
     wp_nav_menu(array(
       'theme_location' => 'primary',
       'menu_class' => 'nav-links',
-      'container_class' => false
+      'container' => false
     ));
     ?>
   </div>
