@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-	<?php wp_head();?>
+        <?php wp_head();?>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accompagnatore per disabile a Modena – Alberto cerca una figura maschile</title>
 <meta property="og:title" content="Accompagnatore per disabile a Modena – Alberto cerca una figura maschile">
 <meta property="og:description" content="Sono Alberto, una persona disabile di Modena alla ricerca di un accompagnatore maschile affidabile per 23 ore a settimana.">

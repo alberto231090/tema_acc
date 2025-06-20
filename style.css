@@ -348,3 +348,18 @@ footer {
 .mobile {
   display: none;
 }
+
+/* ---------------- MOBILE HEADER ---------------- */
+@media (max-width: 768px) {
+  header {
+    padding: 4rem 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
