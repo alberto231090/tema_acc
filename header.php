@@ -28,22 +28,11 @@
   "image": "https://www.tuosito.it/wp-content/themes/il-mio-accompagnatore/images/main.jpg"
 }
 </script>
-	<?php include('nav-menu.php')?>
 </head>
 <body>
   <header>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
+    <?php include('nav-menu.php'); ?>
 
-    toggle.addEventListener('click', function () {
-      navLinks.classList.toggle('active');
-      toggle.classList.toggle('active');
-    });
-  });
-</script>
-
-	  <h1>Il mio accompagnatore ideale</h1>
+    <h1>Il mio accompagnatore ideale</h1>
     <p>Una richiesta di compagnia vera, fatta col cuore</p>
   </header>
