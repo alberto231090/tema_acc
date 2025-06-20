@@ -127,6 +127,7 @@ footer {
 /* === MENU WORDPRESS (desktop) === */
 /* NAVBAR BASE */
 .navbar {
+  position: relative;
   background-color: #fff;
   border-bottom: 1px solid #eee;
   padding: 1rem 0;
@@ -337,6 +338,15 @@ footer {
     height: 3px;
     background: #333;
     margin: 4px 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
   }
 }
 
